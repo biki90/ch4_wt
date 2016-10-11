@@ -1,6 +1,6 @@
 # This file is app/controllers/movies_controller.rb
 class MoviesController < ApplicationController
-  byebug
+  
   def index
     @movies = Movie.all
   end
@@ -17,6 +17,11 @@ class MoviesController < ApplicationController
 
   def movie_params
     params.require(:movie).permit(:title, :rating, :description, :release_date)
+  end
+  
+  def new
+    @movie = Movie.new
+    # default: render 'new' template
   end
   
 end
