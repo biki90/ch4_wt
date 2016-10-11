@@ -1,9 +1,11 @@
 # This file is app/controllers/movies_controller.rb
 class MoviesController < ApplicationController
+  byebug
   def index
     @movies = Movie.all
   end
   
+
   def show
     id = params[:id] # retrieve movie ID from URI route
     @movie = Movie.find(id) # look up movie by unique ID
