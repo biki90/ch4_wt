@@ -10,4 +10,6 @@ class CreateMovies < ActiveRecord::Migration
       t.timestamps
     end
   end
+  
+  
 end

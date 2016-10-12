@@ -18,6 +18,7 @@ more_movies = [
     :release_date => '12-Jun-1981'}
 ]
 
+
 more_movies.each do |movie|
   Movie.create!(movie)
 end
